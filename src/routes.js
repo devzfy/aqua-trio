@@ -4,7 +4,8 @@ import {
 
 import {
     Home,
-    News
+    News,
+    SingleNew
 } from "./pages";
 
   export const router = createBrowserRouter([
@@ -15,5 +16,9 @@ import {
     {
         path: "/news",
         element: <News/>
-    }
+    },
+    {
+      path: "/news/:id",
+      element: <SingleNew/>
+  }
 ])

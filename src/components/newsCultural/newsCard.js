@@ -10,7 +10,7 @@ const CulturalCard = ({image, name, text})=>{
             <div className={style.right_side}>
                 <h2>{name}</h2>
                 <p>{text}</p>
-                <Link className={style.single_link} to={'/news'}>Читать подробнее</Link>
+                <Link className={style.single_link} to={'/news/10'}>Читать подробнее</Link>
             </div>
         </div>
     )
