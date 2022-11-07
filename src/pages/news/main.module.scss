@@ -1,0 +1,88 @@
+.new_culture_wrapper {
+  .Culture_Uzbekistan {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0 150px 0;
+    .left_side {
+      width: 45%;
+      position: relative;
+      height: 100%;
+      img {
+        &:nth-child(2) {
+          transform: translateX(160px);
+        }
+      }
+      
+    }
+    .right_side {
+      width: 42%;
+      position: relative;
+      &::before{
+        transform: rotate(-90deg);
+        width: 451px;
+        height: 2px;
+        position: absolute;
+        content: '';
+        background-color: #000000;
+        top: -30px;
+        bottom: 0;
+        margin: auto;
+        left: -300px;
+      }
+      .side_text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        color: #000000;
+      }
+      .side_name {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .culture_cards_wrapper{
+    margin-bottom: 60px;
+    .culture_cards{
+        margin-bottom: 40px;
+    }
+    .pagination{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+  }
+  .culture_slider_wrapper{
+    margin: 40px 0;
+    h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+    .culture_cards{
+        padding : 0 10px !important;
+    }
+  }
+}
