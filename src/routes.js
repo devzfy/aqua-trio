@@ -5,7 +5,9 @@ import {
 import {
     Home,
     News,
-    SingleNew
+    SingleNew,
+    CulturalFigures,
+    FigureSingle
 } from "./pages";
 
   export const router = createBrowserRouter([
@@ -20,5 +22,13 @@ import {
     {
       path: "/news/:id",
       element: <SingleNew/>
-  }
+    },
+    {
+      path:"/culturalFigures",
+      element: <CulturalFigures/>
+    },
+    {
+      path: "culturalFigures/:id",
+      element: <FigureSingle/>
+    }
 ])

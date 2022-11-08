@@ -1,16 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './header.module.scss'
 import { Link } from 'react-router-dom'
 import {Search, Logo, Burger} from '../../assets/icons/icons'
+import Modal from '../modal/Modal'
+import Authorization from '../../auth/auth'
+import BurgerModal from '../burger/burger'
 
 const Header = () => {
+    const [showModal, setShowModal] = useState(false)
+    const [burger, setBurger] = useState(false)
+    const close = ()=>{
+        setShowModal(false)
+    }
+    const openModal = ()=>{
+        setShowModal(true)
+    }
+    
   return (
     <div className={styles.Header_wrapper}>
       <div className='container'>
         <div className={styles.inner}>
             <div className={styles.logo}> 
                 <Logo/>
-                <Burger/>
+                <button onClick={()=> setBurger(true)} className={styles.burger_btn}>
+                    <Burger/>
+                </button>
             </div>
             <div className={styles.links}>
                 <ul className={styles.header_ul}>
@@ -33,11 +47,17 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={styles.sign}>
-                    <button className='univ_btn'>Войти</button>
+                    <button className='univ_btn' onClick={openModal}>Войти</button>
                 </div>
             </div>
         </div>
       </div>
+    <Modal open={showModal} close={close}>
+        <Authorization/>
+    </Modal> 
+    {
+        burger ? <BurgerModal  setOpen={setBurger}/> : null
+    }
     </div>
   )
 }

@@ -1,0 +1,121 @@
+.links{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #4A4949;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.mini_link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #4A4949;
+}
+
+.owerlay{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 991;
+}
+
+.drawer_wrapper{
+    width: 100%;
+}
+
+.close_btn{
+    position: absolute;
+    z-index: 999;
+    top: 25px;
+    right: 61px;
+    width: 31px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    &::before{
+        display: none;
+    }
+}
+
+
+
+.content{
+    position: absolute;
+    z-index: 992;
+    min-height: 100vh;
+    background-color: #fff;
+    top: 0;
+    width: 430px;
+    padding: 90px 0 0 40px;
+    box-sizing: border-box;
+    .burger_ul{
+        .links{
+            display: block;
+            margin-bottom: 25px;
+            position: relative;
+            
+        }
+    }
+    .dropdawn{
+        .opened{
+            padding-left: 46px;
+            margin: 15px 0;
+            height: 0;
+            overflow: hidden;
+            transition: 0.2s;
+            &.one{
+                &.active{
+                    height: 70px;
+                }
+            }
+            &.two{
+                &.active{
+                    height: 160px;
+                }
+            }
+            &.three{
+                &.active{
+                    height: 130px;
+                }
+            }
+            
+            .mini_link{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    button{
+        &::before{
+            position: absolute;
+            content: '';
+            right: -30px;
+            top: 0;
+            transform: rotate(90deg);
+            bottom: 0;
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-position: center;
+            background-image: url('../../assets/images/free-icon-arrow-point-to-right-32213.png');
+        }
+    
+    }
+}
+

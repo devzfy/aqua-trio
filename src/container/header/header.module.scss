@@ -1,9 +1,12 @@
+ul{
+    margin: 0 !important;
+}
 .Header_wrapper{
     background: #022873;
     padding: 18px 0;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index:100;
     .inner{
         display: flex;
         align-items: center;
@@ -12,6 +15,10 @@
             display: flex;
             align-items: center;
             gap: 15px;
+        }
+        .burger_btn{
+            border: none;
+            background-color: transparent;
         }
         .links{
             .header_ul{
@@ -61,4 +68,5 @@
             }
         }
     }
+    
 }

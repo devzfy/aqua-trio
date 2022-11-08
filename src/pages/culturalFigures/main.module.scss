@@ -1,0 +1,37 @@
+.CulturalFigures_wrapper{
+    margin: 0 0 60px 0;
+    .inner{
+       .famous_cards{
+        margin-bottom: 20px;
+        margin-top: 90px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card{
+            width: 47%;
+            margin-bottom: 50px;
+        }
+       } 
+       .pagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+       }
+
+       .slider_wrapper{
+        h1{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #000000;
+            margin: 70px 0 40px 0;
+        }
+        .slider_card{
+            padding: 0 10px;
+        }
+       }
+    }
+}

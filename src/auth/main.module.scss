@@ -1,0 +1,234 @@
+span{
+    cursor: pointer;
+}
+
+.modal_content_wrapper{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    .choose_auth{
+        button{
+            border: none;
+            background-color: transparent;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            padding: 13px 0;
+            width: 476px;
+            display: block;
+            border: 2px solid #022873;
+            border-radius: 6px;
+            &.btn_one{
+                background: #022873;
+                color: #FFFFFF;
+                margin-bottom: 24px;
+            }
+            &.btn_two{
+                color: #022873;
+            }
+        }
+    }
+}
+
+.login_page{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    .log{
+        width: 700px;
+        .field{
+            margin-bottom: 20px;
+            position: relative;
+            label{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+                display: block;
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: 100%;
+                border: 2px solid #000000;
+                border-radius: 7px;
+                padding: 15px 20px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                position: absolute;
+                bottom: -30px;
+                right: 0;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #022873;
+            }
+            .show_pass{
+                position: absolute;
+                right: 30px;
+                top: 46px;
+            }
+        }
+    }
+}
+
+.page_wrapper{
+    width: 872px;
+    height: 529px; 
+    position: relative;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.register_page{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    box-sizing: border-box;
+    .inner{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        .form_input{
+            width: 32%;
+            margin-bottom: 40px;
+            label{
+                display: block;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+                margin-bottom: 10px;
+            }
+            input{
+                border: 2px solid #000000;
+                border-radius: 7px;
+                width: 100%;
+                padding: 15px 10px;
+                box-sizing: border-box;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                color: #000000;
+            }
+
+            .gender_btn{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                button{
+                    width: 48%;
+                    border: none;
+                    background-color: transparent;
+                    border: 2px solid #000000;
+                    border-radius: 7px;
+                    padding: 17px 0;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.create_password{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 0 86px;
+    box-sizing: border-box;
+    .input_pass{
+        width: 100%;
+        margin-bottom: 20px;
+        position:relative;
+        &:last-child{
+            margin-bottom: 40px;
+        }
+        span{
+            position: absolute;
+            right: 30px;
+            top: 46px;
+        }
+        label{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            color: #000000;
+        }
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            border: 2px solid #000000;
+            border-radius: 7px;
+            padding: 15px 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+        }
+    }
+    .submit_btn{
+        margin-top: 40px;
+    }
+}
+
