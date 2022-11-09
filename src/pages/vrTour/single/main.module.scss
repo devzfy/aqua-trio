@@ -1,0 +1,47 @@
+.TourSingle_wrapper{
+    .inner{
+        .into_content{
+            padding: 170px 0 60px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 1069px;
+                height: 481px;
+                object-fit: cover;
+            }
+            h2{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 150%;
+                color: #000000;
+                margin: 40px 0;
+                max-width: 425px;
+                text-align: center;
+            }
+            p{
+                font-family: 'Inter';
+                font-style: italic;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 150%;
+                color: #000000;
+                max-width: 1002px;
+            }
+
+        }
+        .info_cards{
+            margin-bottom: 40px;    
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card{
+                width: 32%;
+            }
+        }
+    }
+}

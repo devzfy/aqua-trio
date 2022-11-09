@@ -30,7 +30,7 @@ const Header = () => {
                 <ul className={styles.header_ul}>
                     <li><Link to={'/'}>O проекте</Link></li>
                     <li><Link to={"/news"}>Новости культуры</Link></li>
-                    <li><Link to={"/course"}>Курсы</Link></li>
+                    <li><Link to={"/courses"}>Курсы</Link></li>
                     <li><Link to={'/favourites'}>Избранное</Link></li>
                 </ul>
             </div>

@@ -12,7 +12,8 @@ import {
     EditionSingle,
     VrTour,
     TourCategories,
-    TourSingle
+    TourSingle,
+    Course
 } from "./pages";
 
   export const router = createBrowserRouter([
@@ -34,7 +35,7 @@ import {
     },
     {
       path: "culturalFigures/:id",
-      element: <FigureSingle/>
+      element: <FigureSingle/>  
     },
     {
       path: "edition",
@@ -59,5 +60,9 @@ import {
     {
       path: "/tour/:id",
       element: <TourSingle/>
+    },
+    {
+      path: "/courses",
+      element: <Course/>
     },
 ])

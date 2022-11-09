@@ -8,6 +8,7 @@ import EditionSingle from "./edition/single/editionSingle";
 import VrTour from "./vrTour/vrTour";
 import TourCategories from "./vrTour/tourCategories/tourCategories";
 import TourSingle from "./vrTour/single/tourSingle";
+import Course from "./courses/course";
 
 export {
     Home,
@@ -19,5 +20,6 @@ export {
     EditionSingle,
     VrTour,
     TourCategories,
-    TourSingle
+    TourSingle,
+    Course
 }
