@@ -39,10 +39,10 @@ const BurgerModal = ({ setOpen }) => {
             <Link className={burger.links}>Новости культуры</Link>
           </li>
           <li>
-            <Link className={burger.links}>Деятели культуры</Link>
+            <Link to={'/culturalFigures'} className={burger.links}>Деятели культуры</Link>
           </li>
           <li>
-            <Link className={burger.links}>Издания</Link>
+            <Link to={'/edition'} className={burger.links}>Издания</Link>
           </li>
         </ul>
         <ul className={burger.dropdawn}>
@@ -60,10 +60,10 @@ const BurgerModal = ({ setOpen }) => {
             }`}
           >
             <li>
-              <Link className={burger.mini_link}>Музеи</Link>
+              <Link to={'/tour'} className={burger.mini_link}>Музеи</Link>
             </li>
             <li>
-              <Link className={burger.mini_link}>Парки</Link>
+              <Link to={'/tour'} className={burger.mini_link}>Парки</Link>
             </li>
           </div>
         </ul>

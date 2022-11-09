@@ -1,0 +1,110 @@
+.FigureSingle_wrapper{
+    .inner{
+        .intro_single{
+            padding: 248px 0 86px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .intro_image{
+                width: 872px;
+                height: 515px;
+                margin-bottom: 60px;
+            }
+            .intro_name{
+                margin-bottom: 30px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 42px;
+                color: #000000;
+            }
+            .intro_text{
+                font-family: 'Inter';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 150%;
+                color: #000000;
+                max-width: 652px;
+            }
+        }
+        .holder{
+            h1{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 150%;
+                color: #000000;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .info_content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .text{
+            width: 48%;
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 150%;
+                color: #000000;
+            }
+        }
+        .image{
+            width: 48%;
+            position: relative;
+            height: 437px;
+            img{
+                position: absolute;
+                width: 420px;
+                height: 265px;
+            }
+        }
+        &.first_child{
+            .image{
+                .one{
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                .two{
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+        &.second_child{
+            .image{
+                .one{
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                }
+                .two{
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .last_content{
+        margin-bottom: 60px;
+        p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+}

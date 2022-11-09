@@ -1,0 +1,39 @@
+.VrTour_wrapper{
+   .inner{
+        margin: 101px 0 269px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .tour_card{
+            width: 630px;
+            height: 362px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.45);
+                top: 0;
+                left: 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            h1{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 61px;
+                color: #000000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+   } 
+}

@@ -4,6 +4,7 @@ import SliderThreCard from "./sliderThreCard/sliderThreCard";
 import SliderFourCard from "./sliderFourCard/sliderFourCard";
 import SliderFiveCard from "./sliderFiveCard/sliderFiveCard";
 import CulturalCard from "./newsCultural/newsCard";
+import EditionCard from "./editionCard/edtitionCard";
 
 export{
     SliderOneCard,
@@ -11,5 +12,6 @@ export{
     SliderThreCard,
     SliderFourCard,
     SliderFiveCard,
-    CulturalCard
+    CulturalCard,
+    EditionCard
 }

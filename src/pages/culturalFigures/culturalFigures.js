@@ -26,7 +26,7 @@ const CulturalFigures = ()=>{
                             {
                                 fakeArr?.map((index)=>{
                                     return <div className={clas.card} key={index}>
-                                        <FiguresCard/>
+                                        <FiguresCard linkName={'Читать подробнее'} link={'/culturalFigures/9'}/>
                                     </div>
                                 })
                             }
