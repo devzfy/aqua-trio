@@ -1,0 +1,104 @@
+.CourseSingle_wrapper{
+    .inner{
+        .intro_place{
+            padding: 185px 0 99px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 1164px;
+                height: 436px;
+                object-fit: cover;
+                margin-bottom: 30px;
+            }
+            h3{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 27px;
+                max-width: 343px;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 137px;
+                    bottom: -15px;
+                    height: 1px;
+                    background-color: #000000;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 150%;
+                color: #000000;
+                max-width: 616px;
+                text-align: center;
+            }
+        }
+
+        .course_information{
+            padding: 60px 80px;
+            box-sizing: border-box;
+            width: 781px;
+            margin: 0 auto 60px auto;
+            background: rgba(242, 233, 216, 0.7);
+            ul{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px !important;
+                li{
+                    width: 48%;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-size: 25px;
+                    line-height: 150%;
+                    font-weight: 400;
+                    color: #000000;
+                    &.bold_text{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .description{
+            margin-bottom: 60px;
+            h1{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 150%;
+                color: #000000;
+            }
+            .image_text{
+                display: flex;
+                margin-top: 40px;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 48%;
+                }
+                p{
+                    width: 48%;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 150%;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import modal from './modal.module.scss'
 import ReactDOM from  'react-dom'
-const Modal = ({children, open, close})=>{
+const Modal = ({children, open, close, name})=>{
 
     let bod = document.querySelector('body')
     if(open){
@@ -17,7 +17,7 @@ const Modal = ({children, open, close})=>{
         <div className={modal.modal_scroll}>
               <div className={modal.header_title}>
                 <div className="container">
-                    <h1>Регистрация </h1>
+                    {name ? <h1>Регистрация </h1> : null}
                 </div>
               </div>
             <div className={modal.overlay} onClick={close}></div>

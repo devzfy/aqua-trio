@@ -1,7 +1,7 @@
 import Header from "../../../container/header/header";
 import Footer from "../../../container/footer/footer";
 import Banner from "../../../container/banner/banner";
-import {Link, useLocation} from 'react-router-dom'
+import {useLocation} from 'react-router-dom'
 import clas from './main.module.scss'
 import React, { useEffect, useState } from "react";
 import Image from '../../../assets/images/Recta.png'

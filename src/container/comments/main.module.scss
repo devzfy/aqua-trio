@@ -1,0 +1,75 @@
+.commen_wrapper{
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    .comment_header{
+        padding: 21px;
+        border-bottom:  1px solid #77A1D9;
+        h3{
+            font-family: 'inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            color: #000000;
+        }
+    }
+    .comments{
+        padding: 40px;
+        width: 100%;
+        .comment_card{
+            margin-bottom: 50px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+            background: #FFFBFB;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+            border-radius: 0px 10px 10px 10px;
+            .left_side{
+                width: 30%;
+                h2{
+                    font-family: 'inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #000000;
+                    margin-bottom: 0;
+                }
+                img{
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 15px;
+                }
+                span{
+                    margin-top: 15px;
+                    display: block;
+                    font-family: 'inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #000000;
+                }
+            }
+            .right_side{
+                width: 65%;
+                .action{
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    .pagination{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+}

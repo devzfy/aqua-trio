@@ -52,7 +52,7 @@ const Header = () => {
             </div>
         </div>
       </div>
-    <Modal open={showModal} close={close}>
+    <Modal open={showModal} close={close} name={true}>
         <Authorization/>
     </Modal> 
     {

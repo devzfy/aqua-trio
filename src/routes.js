@@ -13,7 +13,10 @@ import {
     VrTour,
     TourCategories,
     TourSingle,
-    Course
+    Course,
+    CourseCategories,
+    CourseSingle,
+    Rate
 } from "./pages";
 
   export const router = createBrowserRouter([
@@ -64,5 +67,29 @@ import {
     {
       path: "/courses",
       element: <Course/>
+    },
+    {
+      path: "/courses/music",
+      element: <CourseCategories/>
+    },
+    {
+      path: "/courses/theatre",
+      element: <CourseCategories/>
+    },
+    {
+      path: "/courses/movie",
+      element: <CourseCategories/>
+    },
+    {
+      path: "/courses/oratory",
+      element: <CourseCategories/>
+    },
+    {
+      path: "/courses/:id",
+      element: <CourseSingle/>
+    },
+    {
+      path: "/rate",
+      element: <Rate/>
     },
 ])

@@ -14,19 +14,19 @@ const Course = ()=>{
                     <Banner name={'Курсы'} image={Image} text={'Lorem ipsum dolor sit amet, consectetur'}/>
                 <div className="container">
                     <div className={clas.inner}>
-                        <Link className={clas.course_card}>
+                        <Link to={'/courses/music'} className={clas.course_card}>
                             <img src={Image} alt="" />
                             <span>Музыка</span>
                         </Link>
-                        <Link className={clas.course_card}>
+                        <Link to={'/courses/theatre'} className={clas.course_card}>
                         <img src={Image} alt="" />
                             <span>Театр</span>
                         </Link>
-                        <Link className={clas.course_card}>
+                        <Link to={'/courses/movie'} className={clas.course_card}>
                         <img src={Image} alt="" />
                             <span>Кино</span>
                         </Link>
-                        <Link className={clas.course_card}>
+                        <Link to={'/courses/oratory'} className={clas.course_card}>
                         <img src={Image} alt="" />
                             <span>Ораторское искусство</span>
                         </Link>

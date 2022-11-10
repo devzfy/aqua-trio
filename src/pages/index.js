@@ -9,6 +9,9 @@ import VrTour from "./vrTour/vrTour";
 import TourCategories from "./vrTour/tourCategories/tourCategories";
 import TourSingle from "./vrTour/single/tourSingle";
 import Course from "./courses/course";
+import CourseCategories from "./courses/categories/courseCategories";
+import CourseSingle from "./courses/single/courseSingle";
+import Rate from "./rating/rating";
 
 export {
     Home,
@@ -21,5 +24,8 @@ export {
     VrTour,
     TourCategories,
     TourSingle,
-    Course
+    Course,
+    CourseCategories,
+    CourseSingle,
+    Rate
 }
