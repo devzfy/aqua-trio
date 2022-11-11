@@ -1,0 +1,32 @@
+.SingleMusic_wrapper{
+    margin-top: 60px;
+    .page_holder{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        h1{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+    .music_list{
+        .music{
+            margin-bottom: 40px;
+        }
+    }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+    }
+    .rec_card{
+        margin-bottom: 60px;
+        .card{
+            padding: 0 10px;
+        }
+    }
+}

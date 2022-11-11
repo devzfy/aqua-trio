@@ -16,7 +16,10 @@ import {
     Course,
     CourseCategories,
     CourseSingle,
-    Rate
+    Rate,
+    Profile,
+    Music,
+    SingleMusic
 } from "./pages";
 
   export const router = createBrowserRouter([
@@ -92,4 +95,25 @@ import {
       path: "/rate",
       element: <Rate/>
     },
+    {
+      path: "/profile",
+      element: <Profile/>
+    },
+    {
+      path: "/music",
+      element: <Music/>
+    },
+    {
+      path: "/music/national",
+      element: <SingleMusic/>
+    },
+    {
+      path: "/music/classic",
+      element: <SingleMusic/>
+    },
+    {
+      path: "/music/worldClassic",
+      element: <SingleMusic/>
+    },
+
 ])

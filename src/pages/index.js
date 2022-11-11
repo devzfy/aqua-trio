@@ -12,6 +12,9 @@ import Course from "./courses/course";
 import CourseCategories from "./courses/categories/courseCategories";
 import CourseSingle from "./courses/single/courseSingle";
 import Rate from "./rating/rating";
+import Profile from "./profile/profile";
+import Music from "./music/music";
+import SingleMusic from "./music/single/singleMusic";
 
 export {
     Home,
@@ -27,5 +30,8 @@ export {
     Course,
     CourseCategories,
     CourseSingle,
-    Rate
+    Rate,
+    Profile,
+    Music,
+    SingleMusic
 }

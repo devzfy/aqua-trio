@@ -1,11 +1,61 @@
 .FiguresCard_wrapper{
     width: 100%;
-    img{
-        margin-bottom: 40px;
-        width: 100%;
+    position: relative;
+    
+    .before{
+        position: relative;
         height: 350px;
-        object-fit: cover;
+        margin-bottom: 30px;
+        transition: all .3s;
+        overflow: hidden;
+        button{
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            z-index: 5;
+            opacity: 0;
+        }
+        .overlay{
+            position: absolute;
+            transition: all .3s;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            z-index: 1;
+            opacity: 0;
+        }
+        img{
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            transition: 0.2s;
+            min-height: 350px;
+        }
+
+        &:hover{
+            transition: 0.2s;
+                img{
+                    transform: scale(1.1);
+                }
+                .overlay{
+                    opacity: 0.5;
+                }
+                button{
+                    opacity: 1;
+                    transition: .3s;
+                    &:hover{
+                        svg{
+                            fill: #f00;
+                        }
+                    }
+                }
+        }
+        
     }
+   
     h3{
         font-family: 'Inter';
         font-style: normal;
@@ -42,4 +92,18 @@
         line-height: 150%;
         color: #A29D9D;
     }
+    
 }
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    &.animate {
+      transition-duration: 1s;
+      background-position: -2800px 0;
+    }
+  }

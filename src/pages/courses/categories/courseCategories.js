@@ -10,6 +10,7 @@ import Slider from 'react-slick'
 import { Link } from "react-router-dom";
 import {SliderFiveCard, FiguresCard} from '../../../components'
 import {data_five} from '../../../data/collection'
+import { Favourite } from "../../../assets/icons/icons";
 
 
 const CourseCategories = ()=>{
@@ -29,13 +30,14 @@ const CourseCategories = ()=>{
                                 {
                                     fakeArr.map((el)=>{
                                         return <div className={clas.up_card}>
-                                            <FiguresCard linkName={'Читать подробнее'} link={'/courses/1'}/>
+                                            <FiguresCard likeBtn={true} linkName={'Читать подробнее'} link={'/courses/1'}/>
                                         </div>
                                     })
                                 }
                             </div>
                             <div className={clas.mid_card_wrapper}>
                                 <div className={clas.left}>
+                                    <button>{<Favourite/>}</button>
                                     <img src={Image} alt="" />
                                 </div>
                                 <div className={clas.right}>
@@ -48,7 +50,7 @@ const CourseCategories = ()=>{
                                 {
                                     fakeArr.map((el)=>{
                                         return <div className={clas.up_card}>
-                                            <FiguresCard linkName={'Читать подробнее'} link={'/course/1'}/>
+                                            <FiguresCard likeBtn={true} linkName={'Читать подробнее'} link={'/course/1'}/>
                                         </div>
                                     })
                                 }

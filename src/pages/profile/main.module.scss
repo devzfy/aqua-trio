@@ -1,0 +1,106 @@
+.Profile_wrapper{
+    padding-top: 160px;
+    .page_wrapper{
+        background: #F2E9D8;
+        margin-bottom: 110px;
+        h1{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            color: #000000;
+            padding: 22px 0;
+        }
+    }
+    .profile_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 112px;
+        .image{
+            width: 25%;
+            button{
+                display: flex;
+                margin-top: 30px;
+                span{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #000000;
+                    display: block;
+                    margin-right: 13px;
+                }
+            }
+        }
+        .information{
+            padding-left: 70px;
+            border-left: 2px solid #000;
+            width: 50%;
+            ul{
+                width: 100%;
+                display: flex;
+                margin-bottom: 20px !important;
+                li{
+                    width: 50%;
+                    font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 27px;
+                    &:first-child{
+                        
+                        color: #8D8787;
+                    }
+                }
+            }
+        }
+        .edit_profile{
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            button{
+                margin-left: 45px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #8D8787;
+            }
+        }
+    }
+
+    .my_achievements{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-bottom: 220px;
+        .achievement_card{
+            margin-bottom: 40px;
+            width: 22%;
+            img{
+                width: 100%;
+                height: 199px;
+            }
+            .award{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 7px;
+                gap: 10px;
+                span{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

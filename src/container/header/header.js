@@ -31,7 +31,7 @@ const Header = () => {
                     <li><Link to={'/'}>O проекте</Link></li>
                     <li><Link to={"/news"}>Новости культуры</Link></li>
                     <li><Link to={"/courses"}>Курсы</Link></li>
-                    <li><Link to={'/favourites'}>Избранное</Link></li>
+                    <li><Link to={'/rate'}>Рейтинги</Link></li>
                 </ul>
             </div>
             <div className={styles.terms}>

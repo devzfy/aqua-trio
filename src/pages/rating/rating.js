@@ -11,7 +11,7 @@ import Modal from "../../container/modal/Modal";
 import Comment from "../../container/comments/comments";
 
 const Rate = () => {
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false )
   const page_data = [
     {
       name: "Музеи",

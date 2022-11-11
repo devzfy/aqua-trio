@@ -4,7 +4,7 @@ import { Close } from "../../assets/icons/icons";
 import { useState } from "react";
 
 const BurgerModal = ({ setOpen }) => {
-  const [drop1, setDrop1] = useState(true);
+  const [drop1, setDrop1] = useState(false);
   const [drop2, setDrop2] = useState(false);
   const [drop3, setDrop3] = useState(false);
 
@@ -33,10 +33,10 @@ const BurgerModal = ({ setOpen }) => {
         </button>
         <ul className={burger.burger_ul}>
           <li>
-            <Link className={burger.links}>О проекте</Link>
+            <Link to={'/'} className={burger.links}>О проекте</Link>
           </li>
           <li>
-            <Link className={burger.links}>Новости культуры</Link>
+            <Link to={'/news'} className={burger.links}>Новости культуры</Link>
           </li>
           <li>
             <Link to={'/culturalFigures'} className={burger.links}>Деятели культуры</Link>
@@ -60,10 +60,10 @@ const BurgerModal = ({ setOpen }) => {
             }`}
           >
             <li>
-              <Link to={'/tour'} className={burger.mini_link}>Музеи</Link>
+              <Link to={'/tour/museum'} className={burger.mini_link}>Музеи</Link>
             </li>
             <li>
-              <Link to={'/tour'} className={burger.mini_link}>Парки</Link>
+              <Link to={'/tour/park'} className={burger.mini_link}>Парки</Link>
             </li>
           </div>
         </ul>
@@ -84,29 +84,25 @@ const BurgerModal = ({ setOpen }) => {
             }`}
           >
             <li>
-              <Link className={burger.mini_link}>Музыка</Link>
+              <Link to={'/courses/music'} className={burger.mini_link}>Музыка</Link>
             </li>
             <li>
-              <Link className={burger.mini_link}>Театр</Link>
+              <Link to={'/courses/theatre'} className={burger.mini_link}>Театр</Link>
             </li>
             <li>
-              <Link className={burger.mini_link}>Кино</Link>
+              <Link to={'/courses/movie'} className={burger.mini_link}>Кино</Link>
             </li>
             <li>
-              <Link className={burger.mini_link}>Ораторское искусство</Link>
+              <Link to={'/courses/oratory'} className={burger.mini_link}>Ораторское искусство</Link>
             </li>
           </div>
         </ul>
-        <ul className={burger.burger_ul}>
-          <li>
-            <Link className={burger.links}>Музыка</Link>
-          </li>
-        </ul>
+        
         <ul className={burger.dropdawn}>
           <li>
-            <button onClick={() => open3()} className={`${burger.links}`}>
-              Курсы туры
-            </button>
+            <Link to={'/music'} onClick={() => open3()} className={`${burger.links}`}>
+              Музыка
+            </Link>
           </li>
           <div
             className={`${burger.opened} ${burger.three} ${
@@ -114,25 +110,25 @@ const BurgerModal = ({ setOpen }) => {
             }`}
           >
             <li>
-              <Link className={burger.mini_link}>Национальная музыка</Link>
+              <Link to={'/music/national'} className={burger.mini_link}>Национальная музыка</Link>
             </li>
             <li>
-              <Link className={burger.mini_link}>Классическая музыка</Link>
+              <Link to={'/music/classic'} className={burger.mini_link}>Классическая музыка</Link>
             </li>
             <li>
-              <Link className={burger.mini_link}>Мировая классика</Link>
+              <Link to={'/music/worldClassic'} className={burger.mini_link}>Мировая классика</Link>
             </li>
           </div>
         </ul>
         <ul className={burger.burger_ul}>
           <li>
-            <Link className={burger.links}>Игры</Link>
+            <Link to={'/game'} className={burger.links}>Игры</Link>
           </li>
           <li>
-            <Link className={burger.links}>Избранное</Link>
+            <Link to={'/favourite'} className={burger.links}>Избранное</Link>
           </li>
           <li>
-            <Link className={burger.links}>Личный кабинет</Link>
+            <Link to={'/profile'} className={burger.links}>Личный кабинет</Link>
           </li>
         </ul>
       </div>

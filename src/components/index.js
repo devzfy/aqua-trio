@@ -7,6 +7,7 @@ import CulturalCard from "./newsCultural/newsCard";
 import EditionCard from "./editionCard/edtitionCard";
 import FiguresCard from "./FiguresCard/figuresCard";
 import RateCard from "./rateCard/rateCard";
+import MusicPlayer from "./musicPlayer/musicPlayer";
 
 export{
     SliderOneCard,
@@ -17,5 +18,6 @@ export{
     CulturalCard,
     EditionCard,
     FiguresCard,
-    RateCard
+    RateCard,
+    MusicPlayer
 }
