@@ -5,10 +5,19 @@ import {Search, Logo, Burger} from '../../assets/icons/icons'
 import Modal from '../modal/Modal'
 import Authorization from '../../auth/auth'
 import BurgerModal from '../burger/burger'
+import SearchIcons from '../../assets/icons/sear.png'
+import Close from '../../assets/icons/close.png'
 
 const Header = () => {
+    const bod = document.querySelector('body')
     const [showModal, setShowModal] = useState(false)
     const [burger, setBurger] = useState(false)
+    const [ active, setActive ] = useState(false)
+    if(active || burger){
+        bod.classList.add('is_modal_open')
+    }else{
+        bod.classList.remove('is_modal_open')
+    }
     const close = ()=>{
         setShowModal(false)
     }
@@ -41,10 +50,7 @@ const Header = () => {
                     </select>
                 </div>
                 <div className={styles.search}>
-                    <button className={styles.search_btn}><Search/></button>
-                    <div className={styles.search_place}>
-                        <input className='Text here ...' type="search" name="" id="" />
-                    </div>
+                    <button className={styles.search_btn} onClick={()=> setActive(true)}><Search/></button>
                 </div>
                 <div className={styles.sign}>
                     <button className='univ_btn' onClick={openModal}>Войти</button>
@@ -55,6 +61,16 @@ const Header = () => {
     <Modal open={showModal} close={close} name={true}>
         <Authorization/>
     </Modal> 
+
+    <div className={`${styles.overlay} ${active ? styles.active : null}`}></div>
+    <div className={`${styles.search_place} ${active ? styles.active : null}`}>
+        <div className={styles.search_inout}>
+            <input placeholder='Text here ... ' type="search" name="" id="" />
+            <button><img src={SearchIcons} alt="" /></button>
+            <button onClick={()=> setActive(false)}><img src={Close} alt="" /></button>
+        </div>
+    </div>
+
     {
         burger ? <BurgerModal  setOpen={setBurger}/> : null
     }

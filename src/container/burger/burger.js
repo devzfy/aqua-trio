@@ -26,7 +26,7 @@ const BurgerModal = ({ setOpen }) => {
 
   return (
     <div className={burger.drawer_wrapper}>
-      <div className={burger.owerlay}></div>
+      <div className={burger.owerlay} onClick={()=> setOpen(false)}></div>
       <div className={burger.content}>
         <button onClick={()=>setOpen(false)} className={burger.close_btn}>
           <Close />

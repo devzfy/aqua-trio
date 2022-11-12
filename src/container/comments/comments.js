@@ -15,7 +15,7 @@ const Comment = () => {
           <div className={clas.left_side}>
             <img src={User} alt="" />
             <h2>Kathryn Murphy</h2>
-            <ReactStars count={5} size={24} />
+            <ReactStars count={5} size={24} rating={3}/>
             <span>19 февраля 2022</span>
           </div>
           <div className={clas.right_side}>
