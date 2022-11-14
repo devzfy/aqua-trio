@@ -12,7 +12,7 @@ const Game = ()=>{
         <div className={clas.Game_wrapper}>
             <div className="container">
                 <div className={clas.inner}>
-                    <h1>Cкоро будут игры</h1>
+                    <h1 className={clas.holder}>Cкоро будут игры</h1>
                 </div>
             </div>
         </div>
