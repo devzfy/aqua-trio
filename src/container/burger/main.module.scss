@@ -64,6 +64,9 @@ button{
     padding: 90px 0 0 40px;
     box-sizing: border-box;
     overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     .burger_ul{
         .links{
             display: block;

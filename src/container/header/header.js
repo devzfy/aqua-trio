@@ -33,7 +33,7 @@ const Header = () => {
         <div className={styles.inner}>
             <div className={styles.logo}> 
                 <Link to={'/'} className={styles.logo_image}><img src={Logo} alt="" />
-                <span>VIRTUAL MADAMIYAT MARKAZI</span></Link>
+              </Link>
                 <button onClick={()=> setBurger(true)} className={styles.burger_btn}>
                     <Burger/>
                 </button>
