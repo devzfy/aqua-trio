@@ -56,7 +56,7 @@ const CourseCategories = ()=>{
                                 {
                                     fakeArr.map((el)=>{
                                         return <div className={clas.up_card}>
-                                            <FiguresCard likeBtn={true} linkName={'Читать подробнее'} link={'/course/1'}/>
+                                            <FiguresCard likeBtn={true} linkName={'Читать подробнее'} link={'/courses/1'}/>
                                         </div>
                                     })
                                 }
