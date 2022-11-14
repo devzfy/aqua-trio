@@ -5,15 +5,17 @@ import Banner from '../../container/banner/banner'
 import Image from '../../assets/images/Rectangle.png'
 import Image1 from '../../assets/images/Rectangle 45.png'
 import Image2 from '../../assets/images/Rectangle 56.png'
-import { data_four, data_one, data_five } from '../../data/collection'
+import {  data_one, data_five } from '../../data/collection'
 import { CulturalCard } from '../../components'
-import { Pagination } from 'antd';
 import 'antd/dist/antd.css';
-import './main.css'
 import {SliderFiveCard} from '../../components'
 import Slider from 'react-slick'
 import { settings2 } from '../../helpers/settings'
+import {PaginationCustome} from '../../components'
 const News = ()=>{
+    
+    
+
     return (
         <>
         <Header/>
@@ -43,9 +45,7 @@ const News = ()=>{
                                 </div>
                             })
                         }
-                        <div className={style.pagination}>
-                            <Pagination size="small" total={50} />
-                        </div>
+                        <PaginationCustome/>
                     </div>
 
                     <div className={style.culture_cards_wrapper}>
@@ -57,9 +57,7 @@ const News = ()=>{
                                 </div>
                             })
                         }
-                        <div className={style.pagination}>
-                            <Pagination size="small" total={50} />
-                        </div>
+                        <PaginationCustome/>
                     </div>
 
 

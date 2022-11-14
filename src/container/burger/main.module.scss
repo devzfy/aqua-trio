@@ -73,6 +73,17 @@ button{
         }
     }
     .dropdawn{
+        li{
+            display: flex;
+            align-items: center;
+            button{
+                &:nth-child(2){
+                    display: block;
+                    margin-left: 15px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
         .opened{
             padding-left: 46px;
             margin: 15px 0;
@@ -101,23 +112,4 @@ button{
             }
         }
     }
-
-    button{
-        &::before{
-            position: absolute;
-            content: '';
-            right: -30px;
-            top: 0;
-            transform: rotate(90deg);
-            bottom: 0;
-            margin: auto;
-            width: 15px;
-            height: 15px;
-            background-size: contain;
-            background-position: center;
-            background-image: url('../../assets/images/free-icon-arrow-point-to-right-32213.png');
-        }
-    
-    }
 }
-

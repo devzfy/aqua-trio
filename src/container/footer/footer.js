@@ -18,6 +18,8 @@ const Footer = () => {
                     <li><a href="#">Клубы</a></li>
                     <li><a href="#">Курсы</a></li>
                     <li><a href="#">Рейтинги</a></li>
+                    <li><a href="#">Музыкаw</a></li>
+                    <li><a href="#">Игры</a></li>
                 </ul>
             </div>
             <div className={style.block_two}>

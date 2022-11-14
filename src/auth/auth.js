@@ -5,6 +5,7 @@ import { OpenEye } from "../assets/icons/icons";
 const Authorization = () => {
   const [openEye, setOpenEye] = useState(true);
   const [log, setLog] = useState(null);
+  const [gender, setGender] = useState(null)
 
   return (
     <React.Fragment>
@@ -67,8 +68,8 @@ const Authorization = () => {
               <div className={styles.form_input}>
                 <label htmlFor="">Пол</label>
                 <div className={styles.gender_btn}>
-                  <button>Мужской</button>
-                  <button>Женский</button>
+                  <button onClick={()=> setGender(true)} className={`${styles.gender} ${gender ? styles.active : ''}`}>Мужской</button>
+                  <button onClick={()=> setGender(false)} className={`${styles.gender} ${gender ? '' : styles.active}`}>Женский</button>
                 </div>
               </div>
               <div className={styles.form_input}>

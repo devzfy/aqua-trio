@@ -1,12 +1,14 @@
 import burger from "./main.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Close } from "../../assets/icons/icons";
 import { useState } from "react";
+import Arrow from '../../assets/images/free-icon-arrow-point-to-right-32213.png'
 
 const BurgerModal = ({ setOpen }) => {
   const [drop1, setDrop1] = useState(false);
   const [drop2, setDrop2] = useState(false);
   const [drop3, setDrop3] = useState(false);
+  const navigate = useNavigate()
 
   const open1 = ()=>{
     setDrop1(!drop1)
@@ -48,10 +50,15 @@ const BurgerModal = ({ setOpen }) => {
         <ul className={burger.dropdawn}>
           <li>
             <button
-              onClick={() => open1()}
+              onClick={() =>{
+                navigate('/tour')
+              }}
               className={`${burger.links}`}
             >
               Виртуальные туры
+            </button>
+            <button onClick={()=> open1()}>
+              <img src={Arrow} alt="" />
             </button>
           </li>
           <div
@@ -60,10 +67,10 @@ const BurgerModal = ({ setOpen }) => {
             }`}
           >
             <li>
-              <Link to={'/tour/museum'} className={burger.mini_link}>Музеи</Link>
+              <Link onClick={()=> setOpen(false)} to={'/tour/museum'} className={burger.mini_link}>Музеи</Link>
             </li>
             <li>
-              <Link to={'/tour/park'} className={burger.mini_link}>Парки</Link>
+              <Link  onClick={()=> setOpen(false)} to={'/tour/park'} className={burger.mini_link}>Парки</Link>
             </li>
           </div>
         </ul>
@@ -74,9 +81,10 @@ const BurgerModal = ({ setOpen }) => {
         </ul>
         <ul className={burger.dropdawn}>
           <li>
-            <button onClick={() => open2()} className={burger.links}>
-              Курсы туры
+            <button onClick={()=> navigate('/courses')} className={burger.links}>
+              Курсы
             </button>
+            <button onClick={()=> open2()}><img src={Arrow} alt="" /></button>
           </li>
           <div
             className={`${burger.opened} ${burger.two} ${
@@ -84,16 +92,16 @@ const BurgerModal = ({ setOpen }) => {
             }`}
           >
             <li>
-              <Link to={'/courses/music'} className={burger.mini_link}>Музыка</Link>
+              <Link  onClick={()=> setOpen(false)} to={'/courses/music'} className={burger.mini_link}>Музыка</Link>
             </li>
             <li>
-              <Link to={'/courses/theatre'} className={burger.mini_link}>Театр</Link>
+              <Link  onClick={()=> setOpen(false)} to={'/courses/theatre'} className={burger.mini_link}>Театр</Link>
             </li>
             <li>
-              <Link to={'/courses/movie'} className={burger.mini_link}>Кино</Link>
+              <Link  onClick={()=> setOpen(false)} to={'/courses/movie'} className={burger.mini_link}>Кино</Link>
             </li>
             <li>
-              <Link to={'/courses/oratory'} className={burger.mini_link}>Ораторское искусство</Link>
+              <Link  onClick={()=> setOpen(false)} to={'/courses/oratory'} className={burger.mini_link}>Ораторское искусство</Link>
             </li>
           </div>
         </ul>
@@ -129,6 +137,9 @@ const BurgerModal = ({ setOpen }) => {
           </li>
           <li>
             <Link to={'/profile'} className={burger.links}>Личный кабинет</Link>
+          </li>
+          <li>
+            <Link to={'/rate'} className={burger.links}>Рейтинги</Link>
           </li>
         </ul>
       </div>

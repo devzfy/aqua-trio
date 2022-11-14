@@ -4,11 +4,10 @@ import Footer from '../../../container/footer/footer'
 import clas from './main.module.scss'
 import Banner from '../../../container/banner/banner'
 import Image from '../../../assets/images/Recta.png'
-import { Pagination } from "antd";
 import {settings2} from '../../../helpers/settings'
 import Slider from 'react-slick'
 import { Link, useLocation } from "react-router-dom";
-import {SliderFiveCard, FiguresCard} from '../../../components'
+import {SliderFiveCard, FiguresCard, PaginationCustome} from '../../../components'
 import {data_five} from '../../../data/collection'
 import { Favourite } from "../../../assets/icons/icons";
 
@@ -27,7 +26,7 @@ const CourseCategories = ()=>{
                         <div className={clas.inner}>
                             <div className={clas.holder}>
                                 {
-                                    location.pathname === '/course/music' ? <h1>Музыка</h1>:
+                                    location.pathname === '/courses/music' ? <h1>Музыка</h1>:
                                     location.pathname === '/courses/theatre' ? <h1>Театр</h1> : 
                                     location.pathname === '/courses/movie' ? <h1>Кино</h1>:
                                     location.pathname === '/courses/oratory' ? <h1>Ораторское искусство</h1> : null
@@ -62,9 +61,7 @@ const CourseCategories = ()=>{
                                     })
                                 }
                             </div>
-                            <div className={clas.pagination}>
-                                <Pagination size="small" total={50} />
-                            </div>
+                            <PaginationCustome/>
                             <div className={clas.rec_slider}>
                                 <h1>Рекомендуем вам</h1>
                                 <Slider {...settings2}>

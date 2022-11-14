@@ -1,16 +1,15 @@
 import clas from './main.module.scss'
-import './main.css'
 import Header from '../../container/header/header'
 import Footer from '../../container/footer/footer'
 import React from 'react'
 import Banner from '../../container/banner/banner'
 import Image from '../../assets/images/Rectangle2.png'
 import FiguresCard from '../../components/FiguresCard/figuresCard'
-import { Pagination } from 'antd'
 import  Slider from 'react-slick'
 import { settings2 } from '../../helpers/settings'
 import { SliderFiveCard } from '../../components'
 import { data_five } from '../../data/collection'
+import {PaginationCustome} from '../../components'
  
 
 const CulturalFigures = ()=>{
@@ -31,9 +30,7 @@ const CulturalFigures = ()=>{
                                 })
                             }
                         </div>
-                        <div className={clas.pagination}>
-                            <Pagination size="small" total={50} />
-                        </div>
+                        <PaginationCustome/>
 
                         <div className={clas.slider_wrapper}>
                             <h1>Рекомендуем вам</h1>

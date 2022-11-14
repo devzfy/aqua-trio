@@ -7,11 +7,9 @@ import React, { useEffect, useState } from "react";
 import Image from '../../../assets/images/Recta.png'
 import FiguresCard from "../../../components/FiguresCard/figuresCard";
 import Slider from "react-slick";
-import { SliderFiveCard } from "../../../components";
+import { PaginationCustome, SliderFiveCard } from "../../../components";
 import { settings2 } from "../../../helpers/settings";
 import { data_five } from "../../../data/collection";
-import { Pagination } from "antd";
-import './main.css'
 
 const TourCategories = ()=>{
     const location = useLocation()
@@ -48,9 +46,7 @@ const TourCategories = ()=>{
                             }
                         </div>
 
-                        <div className={clas.pagination}>
-                            <Pagination size="small" total={50} />
-                        </div>
+                            <PaginationCustome />
 
                         <div className={clas.slider_wrapper}>
                             <h1>Рекомендуем вам</h1>

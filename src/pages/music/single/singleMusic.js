@@ -5,11 +5,10 @@ import clas from './main.module.scss'
 import {MusicPlayer, SliderFiveCard} from "../../../components";
 import React from "react";
 import Image from '../../../assets/images/Recta.png'
-import { Pagination } from "antd";
-import './main.css'
 import Slider from "react-slick";
 import { settings2 } from "../../../helpers/settings";
 import { data_five } from "../../../data/collection";
+import { PaginationCustome } from "../../../components";
 
 const SingleMusic = ()=>{
     const fake = [1,1,1,1,1,1]
@@ -30,9 +29,7 @@ const SingleMusic = ()=>{
                         })
                     }
                 </div>
-                <div className={clas.pagination}>
-                    <Pagination total={50} size="small"/>
-                </div>
+                    <PaginationCustome />
                 <div className={clas.rec_card}>
                     <Slider {...settings2}>
                         {

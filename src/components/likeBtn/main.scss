@@ -4,7 +4,8 @@
   }
   
   .like_btn {
-    padding: 0 10px;
+    padding: 2px 10px;
+    width: 110px;
     border: 2px solid #0D0C0C;
     border-radius: 15px;
     display: flex;
@@ -18,7 +19,7 @@
       line-height: 22px;
       color: #000000;
       display: block;
-      margin-left: 5px;
+      margin-left: 10px;
     }
     &.active {
       background-color: #000000;
@@ -58,7 +59,7 @@
   
   .like_wrapper{
     display: flex;
-    width: 110px;
+    width: 250px;
     align-items: center;
     justify-content: space-between;
   }

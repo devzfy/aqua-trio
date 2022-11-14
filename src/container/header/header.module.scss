@@ -40,16 +40,14 @@ ul{
             align-items: center;
             gap: 28px;
             .lang_select{
-                select{
+                width: 35px;
+                button{
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 24px;
                     color: #FFFFFF;
-                    outline: none;
-                    background-color: transparent;
-                    border: none;
                 }
             }
             .search{
@@ -107,20 +105,20 @@ ul{
             margin: auto;
             overflow: hidden;
             border-radius: 10px;
-            background-color: #000;
+            background-color: #022873;
             input{
                 width: 90%;
                 padding: 10px 10px;
                 outline: none;
                 border: none;
-                border: 3px solid #000;
+                border: 3px solid #022873;
                 border-radius: 10px;
             }
             button{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 10%;
+                width: 6%;
             }
         }
     }

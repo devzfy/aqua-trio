@@ -4,8 +4,7 @@ import Header from '../../container/header/header'
 import Footer from '../../container/footer/footer'
 import Image from '../../assets/images/Rectangl.png'
 import Banner from '../../container/banner/banner'
-import { EditionCard, SliderFiveCard } from '../../components'
-import { Pagination } from 'antd'
+import { EditionCard, PaginationCustome, SliderFiveCard } from '../../components'
 import Slider from 'react-slick'
 import { settings2 } from '../../helpers/settings'
 import { data_five } from '../../data/collection'
@@ -29,10 +28,7 @@ const Edition = ()=>{
                                         })
                                     }
                                 </div>
-                                <div className={clas.pagination}>
-                                    <Pagination size="small" total={50} />
-                                </div>
-
+                                <PaginationCustome/>
                                 <h1 className={clas.slider_holder}>
                                     Рекомендуем вам
                                 </h1>

@@ -8,7 +8,7 @@ import EditionCard from "./editionCard/edtitionCard";
 import FiguresCard from "./FiguresCard/figuresCard";
 import RateCard from "./rateCard/rateCard";
 import MusicPlayer from "./musicPlayer/musicPlayer";
-
+import PaginationCustome from "./pagination/pagination";
 export{
     SliderOneCard,
     SliderTwoCard,
@@ -19,5 +19,6 @@ export{
     EditionCard,
     FiguresCard,
     RateCard,
-    MusicPlayer
+    MusicPlayer,
+    PaginationCustome
 }

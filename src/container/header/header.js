@@ -13,6 +13,7 @@ const Header = () => {
     const [showModal, setShowModal] = useState(false)
     const [burger, setBurger] = useState(false)
     const [ active, setActive ] = useState(false)
+    const [lang, setLang] = useState(true)
     if(active || burger){
         bod.classList.add('is_modal_open')
     }else{
@@ -45,9 +46,10 @@ const Header = () => {
             </div>
             <div className={styles.terms}>
                 <div className={styles.lang_select}>
-                    <select name="" id="">
-                        <option value="">ЎЗ</option>
-                    </select>
+                   {
+                    lang ? <button onClick={()=> setLang(!lang)}>ЎЗ</button> : <button onClick={()=> setLang(!lang)}>
+                    Рус</button>
+                   }
                 </div>
                 <div className={styles.search}>
                     <button className={styles.search_btn} onClick={()=> setActive(true)}><Search/></button>

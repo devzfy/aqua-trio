@@ -4,9 +4,7 @@ import Footer from "../../container/footer/footer";
 import Banner from "../../container/banner/banner";
 import React, { useState } from "react";
 import Image from "../../assets/images/Re.png";
-import { RateCard } from "../../components";
-import './main.css'
-import { Pagination } from "antd";
+import { PaginationCustome, RateCard } from "../../components";
 import Modal from "../../container/modal/Modal";
 import Comment from "../../container/comments/comments";
 
@@ -56,9 +54,7 @@ const Rate = () => {
                     })
                 }
                 </div>
-                <div className={clas.pagination}>
-                    <Pagination total={50} size="small"/>
-                </div>
+                <PaginationCustome/>
             </div>;
             })}
         </div>
