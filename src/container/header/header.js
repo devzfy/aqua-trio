@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import styles from './header.module.scss'
 import { Link } from 'react-router-dom'
-import {Search, Logo, Burger} from '../../assets/icons/icons'
+import {Search,Burger} from '../../assets/icons/icons'
+import Logo from '../../assets/icons/logo.png'
 import Modal from '../modal/Modal'
 import Authorization from '../../auth/auth'
 import BurgerModal from '../burger/burger'
@@ -31,7 +32,8 @@ const Header = () => {
       <div className='container'>
         <div className={styles.inner}>
             <div className={styles.logo}> 
-                <Logo/>
+                <Link to={'/'} className={styles.logo_image}><img src={Logo} alt="" />
+                <span>VIRTUAL MADAMIYAT MARKAZI</span></Link>
                 <button onClick={()=> setBurger(true)} className={styles.burger_btn}>
                     <Burger/>
                 </button>

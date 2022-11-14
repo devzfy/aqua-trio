@@ -15,6 +15,22 @@ ul{
             display: flex;
             align-items: center;
             gap: 15px;
+            .logo_image{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 60px;
+                    object-fit: contain;
+                }
+                span{
+                    font-size: 8px;
+                    color: #72b3c4;
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
         }
         .burger_btn{
             border: none;
