@@ -19,7 +19,10 @@ import {
     Rate,
     Profile,
     Music,
-    SingleMusic
+    SingleMusic,
+    ReadBook,
+    Favourite,
+    Game
 } from "./pages";
 
   export const router = createBrowserRouter([
@@ -40,12 +43,16 @@ import {
       element: <CulturalFigures/>
     },
     {
-      path: "culturalFigures/:id",
+      path: "/culturalFigures/:id",
       element: <FigureSingle/>  
     },
     {
-      path: "edition",
+      path: "/edition",
       element: <Edition/>
+    },
+    {
+      path: "/edition/:id/readbook",
+      element: <ReadBook/>
     },
     {
       path: "/edition/:id",
@@ -114,6 +121,14 @@ import {
     {
       path: "/music/worldClassic",
       element: <SingleMusic/>
+    },
+    {
+      path: "/favourite",
+      element: <Favourite/>
+    },
+    {
+      path: "/game",
+      element: <Game/>
     },
 
 ])

@@ -4,8 +4,11 @@ import Image2 from '../../../assets/images/Rectangle 129.png'
 import React from 'react'
 import Header from '../../../container/header/header'
 import Footer from '../../../container/footer/footer'
+import { useNavigate } from 'react-router-dom'
+
 
 const EditionSingle = ()=>{
+    const navigate = useNavigate()
     return (
         <div className={clas.EditionSingle_wrapper}>
             <React.Fragment>
@@ -22,7 +25,7 @@ const EditionSingle = ()=>{
                     <img src={Image2} alt="" />
                 </div>
                 <div className={clas.btn}>
-                    <button>Читать книгу</button>
+                    <button onClick={()=> navigate('/edition/10/readbook')}>Читать книгу</button>
                 </div>
             </div>
             <Footer/>

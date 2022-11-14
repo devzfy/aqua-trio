@@ -15,6 +15,9 @@ import Rate from "./rating/rating";
 import Profile from "./profile/profile";
 import Music from "./music/music";
 import SingleMusic from "./music/single/singleMusic";
+import ReadBook from "./edition/readBook/readbook";
+import Favourite from "./favourite/favourite";
+import Game from "./game/game";
 
 export {
     Home,
@@ -33,5 +36,8 @@ export {
     Rate,
     Profile,
     Music,
-    SingleMusic
+    SingleMusic,
+    ReadBook,
+    Favourite,
+    Game
 }

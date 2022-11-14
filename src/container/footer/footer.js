@@ -18,7 +18,7 @@ const Footer = () => {
                     <li><a href="#">Клубы</a></li>
                     <li><a href="#">Курсы</a></li>
                     <li><a href="#">Рейтинги</a></li>
-                    <li><a href="#">Музыкаw</a></li>
+                    <li><a href="#">Музыка</a></li>
                     <li><a href="#">Игры</a></li>
                 </ul>
             </div>
