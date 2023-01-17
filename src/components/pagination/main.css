@@ -49,3 +49,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+    .pagination{
+        margin: 0;
+    }
+}

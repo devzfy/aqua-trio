@@ -67,3 +67,25 @@ html{
 body .modal_is_open{
         overflow: hidden;
 }
+
+@media screen and (max-width: 600px) {
+    .slick-arrow::before{
+        display: none !important;
+    }
+    .slick-prev{
+        left: 0 !important;
+        z-index: 1;
+    }
+    .slick-next{
+        right: 0 !important;
+    }
+
+    .univ_text{
+        margin-bottom: 0;
+    }
+    .univ_holder{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px !important;
+    }
+}

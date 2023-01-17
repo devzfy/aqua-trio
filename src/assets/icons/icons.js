@@ -281,6 +281,21 @@ const Arrow2 = ()=>{
   
 }
 
+
+const ArrowNext  = ()=>{
+  return <svg width="15" height="24" viewBox="0 0 15 24" fill="none" >
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.04461 24L15.0446 12L3.04461 0L0.224609 2.82L9.38461 12L0.224609 21.18L3.04461 24Z" fill="#1D1D1D"/>
+  </svg>
+  
+}
+
+const ArrowPrev = ()=>{
+  return <svg width="15" height="24" viewBox="0 0 15 24" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9554 24L-0.0446148 12L11.9554 0L14.7754 2.82L5.61539 12L14.7754 21.18L11.9554 24Z" fill="#1D1D1D"/>
+  </svg>
+  
+}
+
 export {
   Like,
   Search,
@@ -301,5 +316,7 @@ export {
   Favourite,
   Heart,
   Arrow,
-  Arrow2
+  Arrow2,
+  ArrowNext,
+  ArrowPrev
 };
