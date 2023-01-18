@@ -29,18 +29,20 @@
 
 .ant-pagination-next{
     margin-left: 10px !important;
+    visibility: visible !important;
 }
 
 .ant-pagination-prev{
+    visibility: visible !important;
     margin-right: 10px !important;
 }
 
 .ant-pagination-next.ant-pagination-disabled{
-    display: none !important;
+    visibility: hidden !important;
 }
 
 .ant-pagination-prev.ant-pagination-disabled{
-    display: none !important;
+    visibility: hidden !important;
 }
 
 .pagination{
@@ -53,5 +55,34 @@
 @media screen and (max-width: 600px) {
     .pagination{
         margin: 0;
+    }
+    .ant-pagination-item a{
+        font-size: 20px;
+        padding: 0 !important;
+        transform: translate(0%, 0%);
+        line-height: 34px;
+    }
+    .ant-pagination-item{
+        width: 35px;
+        min-height: 35px;
+        top: 5px;
+    }
+    .ant-pagination-next{
+        width: 35px !important;
+        height: 35px !important
+    }
+
+     .ant-pagination-prev svg{
+        width: 100%;
+        height: 100%;
+    }
+    .ant-pagination-next svg{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .ant-pagination-prev{
+        width: 35px !important;
+        min-height: 35px !important
     }
 }

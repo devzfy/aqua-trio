@@ -28,3 +28,26 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .Favourite_wrapper{
+        padding-top: 120px;
+        .inner{
+            h1{
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
+            .card_wrapper{
+                .card{
+                    width: 47%;
+                    height: 170px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .pag{
+            margin-bottom: 40px;
+        }
+    }
+}

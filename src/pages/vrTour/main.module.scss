@@ -37,3 +37,24 @@
         }
    } 
 }
+
+@media screen and (max-width: 600px) {
+    .VrTour_wrapper{
+        .inner{
+             margin: 41px 0 ;
+             flex-direction: column;
+             .tour_card{
+                 width: 90%;
+                 height: 197px;
+                 margin-bottom: 30px;
+                 &:last-child{
+                    margin-bottom: 0;
+                 }
+                 h1{
+                     font-size: 25px;
+                     line-height: 30px;
+                 }
+             }
+        } 
+     } 
+}

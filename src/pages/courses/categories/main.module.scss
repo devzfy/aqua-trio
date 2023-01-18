@@ -110,3 +110,89 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .CourseSingle_wrapper{
+        .inner{
+            .holder{
+                margin: 40px 0 30px 0;
+                h1{
+                    font-size: 26px;
+                    line-height: 31px;
+                }
+            }
+            .up_cards_wrapper{
+                flex-wrap: wrap;
+                .up_card{
+                    width: 90%;
+                    margin: 0 auto 40px;
+                    img{
+                        width: 100%;
+                        min-height: 222px;
+                    }
+                    h3{
+                        font-size: 18px;
+                        line-height: 21px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            .mid_card_wrapper{
+                margin: 0  0 50px 0;
+                .left{
+                    width: 38%;
+                    height: auto;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 160px;
+                        object-fit: cover;
+                    }
+                }
+                .right{
+                    width: 60%;
+                    h3{
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-bottom: 20px;
+                        &::before{
+                            width: 54px;
+                            bottom: -10px;
+                        }
+                    }
+                    P{
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                        height: 64px;
+                        overflow: hidden;
+                    }
+                    .link{
+                        font-size: 14px;
+                        line-height: 150%;
+                    }
+                }
+            }
+            .rec_slider{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                h1{
+                    font-size: 27px;
+                    line-height: 31px;
+                    margin-bottom: 30px;
+                }
+                .rec_card{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

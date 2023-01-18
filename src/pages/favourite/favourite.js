@@ -21,7 +21,9 @@ const Favourite = ()=>{
                     }
                 </div>
             </div>
-            <PaginationCustome/>
+        <div className={clas.pag}>
+        <PaginationCustome/>
+        </div>
         </div>
     </div>
     <Footer/>

@@ -107,3 +107,35 @@
       background-position: -2800px 0;
     }
   }
+
+
+  @media screen and (max-width: 600px) {
+    .FiguresCard_wrapper{
+        width: 100%;
+        position: relative;
+        
+        .before{
+            margin-bottom: 15px;
+            height: auto;
+        }
+        h3{
+            font-size: 13px;
+            line-height: 16px;
+            margin-bottom: 11px;
+            &::before{
+                bottom: -5px;
+                width: 53px;
+                height: 1px;
+            }
+        }
+        p{
+            font-size: 10px;
+            margin-bottom: 0;
+        }
+        .single_link{
+            font-size: 8px;
+        }
+        
+    }
+    
+  }

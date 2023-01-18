@@ -47,3 +47,33 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .card_wrapper{
+        .left_side{
+            img{
+                width: 128px;
+                height: 114px;
+                margin-right: 8px;
+            }
+        }
+        .right_side{
+            h3{
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 10px;
+                &::before{
+                    bottom: -5px;
+                    width: 53px;          
+                }
+            }
+            p{
+                font-size: 10px;
+                margin-bottom: 9px;
+            }
+            .EditionCard_link{
+                font-size:9px;
+            }
+        }
+    }
+}

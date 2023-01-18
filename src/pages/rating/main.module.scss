@@ -25,3 +25,31 @@
     }
   }  
 }
+@media screen and (max-width: 600px) {
+    .Rate_wrapper{
+      .page_cards{
+        .holder{
+            font-size: 26px;
+            text-align: center;
+            line-height: 31px;
+            margin: 40px 0 30px 0;
+        }
+        .rating_cards{
+            overflow-y: scroll;
+            margin-bottom: 40px;
+            .bruh{
+                margin-right: 25px;
+                min-width: 70%;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .pagination{
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+      }  
+    }
+}

@@ -24,7 +24,7 @@
     &.active {
       background-color: #000000;
       span{
-        color: #fff;
+        color: #fff !important;
       }
     }
     .rotate_btn{
@@ -62,4 +62,30 @@
     width: 250px;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media screen and (max-width: 600px) {
+    .like_btn {
+      width: 58px;
+      justify-content: space-between;
+      svg{
+        width: 11px;
+        height: 13px;
+      }
+      span{
+        right: 10px !important;
+        font-size: 10px !important;
+        line-height: 12px !important;
+        font-weight: bold !important;
+        margin: 0;
+        bottom: 7px !important;
+      }
+      .rotate_btn{
+        margin-left: 5px;
+      }
+    }
+    .like_wrapper{
+      width: 125px;
+      height: 25px;
+    }
   }

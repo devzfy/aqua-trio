@@ -34,7 +34,7 @@ const TourCategories = ()=>{
                 <div className="container">
                     <div className={clas.inner}>
                         <div className={clas.holder}>
-                            <h1 style={{marginBottom: '100px'}}>{loc}</h1>
+                            <h1 className={clas.holder}>{loc}</h1>
                         </div>
                         <div className={clas.tour_cards}>
                             {
